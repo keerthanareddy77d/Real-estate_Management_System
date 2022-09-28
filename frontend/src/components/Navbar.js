@@ -15,7 +15,7 @@ import { MenuItem } from '@mui/material'
 import {Link} from 'react-router-dom';
 
 
-const pages = ['Over-view','ABOUT-US','CONTACT-US'];
+const pages = ['Properties','Agencies','CONTACT-US'];
 const settings = ['sign-up', 'log-in'];
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 //#4b830d'
   return (
-    <AppBar position="static" style={{ background: '#7ecb20' }}>
+    <AppBar position="static" style={{ background: '#8c7b75' }}>
       <Container maxWidth="x1">
         <Toolbar disableGutters>
           

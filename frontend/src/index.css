@@ -12,10 +12,13 @@ code {
     monospace;
 }
 
+
+
 .tag {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #373737;
   font-variant: small-caps;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .slick-slide img {
