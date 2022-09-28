@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import ImageSlider from './components/imagesSlider';
 import images from './components/images';
 import ho from './components/gallery/ho.png'
+import Agencies from './components/Agencies';
+import Contact from './components/Contact';
 import { Typography,Button } from '@mui/material';
 import './index.css'
 
@@ -25,8 +27,8 @@ function App() {
      <Button  variant="contained" color="error" size="large" href="/Properties">Properties</Button>
      <Routes>
      
-     {/*<Route path='Agencies' element={<Agency/>}/>*/}
-
+     <Route path='Agencies' element={<Agencies/>}/>
+     <Route path='CONTACT-US' element={<Contact/>}/>
     <Route path='Properties' element={<ImageSlider images={images}/>}/>  
     <Route path='sign-up' element={<Register/>}/>
     <Route path='log-in' element={<Login/>}/>
