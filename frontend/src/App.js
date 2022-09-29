@@ -8,6 +8,7 @@ import images from './components/images';
 import ho from './components/gallery/ho.png'
 import Agencies from './components/Agencies';
 import Contact from './components/Contact';
+import Crudr from './components/Crudr';
 import { Typography,Button } from '@mui/material';
 import './index.css'
 
@@ -30,7 +31,7 @@ function App() {
      <Route path='Agencies' element={<Agencies/>}/>
      <Route path='CONTACT-US' element={<Contact/>}/>
     <Route path='Properties' element={<ImageSlider images={images}/>}/>  
-    <Route path='sign-up' element={<Register/>}/>
+    <Route path='sign-up' element={<Crudr/>}/>
     <Route path='log-in' element={<Login/>}/>
   </Routes>
     </div>

@@ -15,18 +15,6 @@ import axios from 'axios';
 function Register() {
     const paperStyle={padding: '30px 20px' ,width:300,margin:"20px auto"}
     const headerStyle={margin:0}
-    const [studName,setName]=useState(""); 
-    
-    const [studList,setStudList]=useState([]);
-    const addToList=()=>{ 
-      axios.post("/newstud",{studName:studName,}); 
-      console.log(studName); 
-    }
-    useEffect(()=>{ //it is only one time used 
-      axios.get("/display").then((response)=>{ 
-        setStudList(response.data); 
-      }) 
-    },[]);
   return (
     <div>
        <Grid>
@@ -37,7 +25,7 @@ function Register() {
                 
             </Grid>
             <form>
-                <TextField fullWidth label='First Name' onChange={(event)=>setName(event.target.value)}/>
+                <TextField fullWidth label='First Name'/>
                 <TextField fullWidth label='Last Name' />
                 <TextField fullWidth label='Email'/>
                 <TextField fullWidth label='UserName' />
@@ -64,7 +52,7 @@ function Register() {
                 </FormGroup>
                 <br/>
                 <Button style={{backgroundColor: "#ff1744"}} type='Reset' variant='contained' color='secondary' >Reset</Button>
-                <Button style={{backgroundColor: "#00e676"}} type='submit' variant='contained' color='primary' onClick={addToList} >Sign up</Button>
+                <Button style={{backgroundColor: "#00e676"}} type='submit' variant='contained' color='primary' >Sign up</Button>
             </form>
          </Paper>
         
