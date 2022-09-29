@@ -1,6 +1,7 @@
 import '../App.css'; 
 import { useState, useEffect} from 'react'; 
 import axios from 'axios'; 
+import Paper from '@mui/material/Paper'
 
 function Crudr() { 
   const [Firstname,setFirstName]= useState(""); 
@@ -17,8 +18,10 @@ function Crudr() {
     axios.post("/newreg",{Firstname:Firstname, Lastname:Lastname,Username:Username,Password:Password}); 
     console.log(Firstname,Username); 
   } 
+  const paperStyle={padding :20,height:'70vh',width:280, margin:"20px auto"}
   return ( 
     <div className="App"> 
+    <Paper elevation={10} style={paperStyle}>
       <h1>Sign up</h1> 
 
 <label>First Name</label><br/> 
@@ -36,9 +39,10 @@ onChange={(event)=>setUserName(event.target.value)}/><br/>
 <label>Password</label><br/> 
 <input type="text" 
 onChange={(event)=>setPassword(event.target.value)}/><br/>
-
+<br/>
 <button onClick={addToList}>Sign up</button> 
-    <h1>All Credentials</h1> 
+</Paper>
+   {/* <h1>All Credentials</h1> 
    
     {Reglist.map((val,key)=>{ 
   return <div key={key} className="User"> 
@@ -47,7 +51,7 @@ onChange={(event)=>setPassword(event.target.value)}/><br/>
     <h1>{val.Username}</h1>
     <h1>{val.Password}</h1> 
   </div> 
-  })}
+  })}*/}
     </div> 
   ); 
 } 
