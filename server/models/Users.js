@@ -10,6 +10,11 @@ const UserSchema=mongoose.Schema({
         type:String,
         required:true
     },
+    Role:
+    {
+        type:String,
+        required:true
+    },
     Username:
     {
         type:String,

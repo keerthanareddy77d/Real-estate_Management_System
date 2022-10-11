@@ -19,7 +19,7 @@ function Agencies() {
                 }} />
         <CardContent>
             <Typography >
-                <pre>Name:agency1
+                <pre>Name:sahithi
                 <br/>
                 contact:1234567890
                 <br/>
@@ -43,7 +43,7 @@ function Agencies() {
                 
             </Typography>
             <Typography >
-                <pre>Name:agency2
+                <pre>Name:rehana
                 <br/>
                 contact:0987654321
                 <br/>
@@ -67,7 +67,7 @@ function Agencies() {
                 
             </Typography>
             <Typography >
-                <pre>Name:agency3
+                <pre>Name:keerthana
                 <br/>
                 contact:5432167890
                 <br/>

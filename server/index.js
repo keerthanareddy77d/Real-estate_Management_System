@@ -8,9 +8,10 @@ mongoose.connect("mongodb+srv://admin123:admin123@cluster.vrp7c01.mongodb.net/da
 app.post("/newreg",async(req,res)=>{
     const Firstname=req.body.Firstname;
     const Lastname=req.body.Lastname;
+    const Role=req.body.Role;
     const Username=req.body.Username;
     const Password=req.body.Password;
-    const user=new UserModel({Firstname:Firstname,Lastname:Lastname,Username:Username,Password:Password});
+    const user=new UserModel({Firstname:Firstname,Lastname:Lastname,Username:Username,Password:Password,Role:Role});
     try{
     await user.save();
     res.send("Inserted Values");}
