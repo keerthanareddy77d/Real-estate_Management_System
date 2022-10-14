@@ -18,14 +18,9 @@ function App() {
       height:"800px"
      }}
       >
-      <Login></Login>
+      <Home></Home>
       <Routes>
-     <Route path='Home' element={<Home/>}/>
-     <Route path='Agencies' element={<Agencies/>}/>
-     <Route path='CONTACT-US' element={<Contact/>}/>
-    <Route path='Properties' element={<ImageSlider images={images}/>}/>  
-    <Route path='sign-up' element={<Crudr/>}/>
-    <Route path='log-in' element={<Login/>}/>
+
   </Routes>
     </div>
   );
