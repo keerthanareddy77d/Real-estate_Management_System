@@ -4,7 +4,7 @@ import ContactMailIcon from '@mui/icons-material/ContactMail'
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone'
 
 function Contact() {
-    const paperStyle={padding: '30px 20px' ,width:190,margin:"20px auto"}
+    const paperStyle={padding: '30px 60px' ,width:190,margin:"20px auto"}
   return (
     <div>
         <h1>CONTACT SERVICES</h1>

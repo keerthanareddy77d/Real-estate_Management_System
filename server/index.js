@@ -2,6 +2,8 @@ const express=require("express");
 const mongoose=require("mongoose"); 
 const UserModel=require("./models/Users"); 
 const app=express(); 
+app.use(express.static('build'))
+
 app.use(express.json());
 mongoose.connect("mongodb+srv://admin123:admin123@cluster.vrp7c01.mongodb.net/database?retryWrites=true&w=majority", 
 {useNewUrlParser: true, },()=>console.log("Connected to DB")); 

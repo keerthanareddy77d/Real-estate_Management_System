@@ -15,7 +15,7 @@ import { MenuItem } from '@mui/material'
 import {Link} from 'react-router-dom';
 
 
-const pages = ['Properties','Agencies','CONTACT-US'];
+const pages = ['Properties','Agencies','CONTACT-US','Property-details','Razorpay','Maps'];
 const settings = ['sign-up', 'log-in'];
 
 const Navbar = () => {
@@ -134,7 +134,7 @@ const Navbar = () => {
             <Tooltip title="signin/login">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar   
-                style={{
+                style={{ 
                   margin: "10px",
                   width: "60px",
                   height: "60px",
@@ -157,6 +157,7 @@ const Navbar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
+              
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}

@@ -57,7 +57,8 @@ function Crudr() {
 <TextField onChange={(event)=>setPassword(event.target.value)} label='Password' placeholder='Enter password' type='password' fullWidth required/><br/>
 <br/>
 <br/>
-<Button onClick={addToList} type='submit' color='primary' variant="contained" fullWidth>Sign up</Button>
+<Button href="/log-in" type='submit' color='primary' variant="contained" fullWidth>Sign up</Button>
+
 <br/><br/>
 <Typography > Already have an account?
                      <Link href="/log-in" >

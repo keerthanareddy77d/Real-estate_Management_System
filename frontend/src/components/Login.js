@@ -3,6 +3,7 @@ import { Grid,Paper, Avatar, TextField, Button, Typography,Link } from '@materia
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
+import two from './gallery/two.jpg'
 const Login=()=>{
 
 
@@ -17,7 +18,7 @@ const Login=()=>{
     const paperStyle={padding :20,height:'70vh',width:280, margin:"20px auto"}
     const avatarStyle={backgroundColor:'#1bbd7e'}
     const btnstyle={margin:'8px 0'}
-    
+   
     const log=()=>
     {
         
@@ -28,6 +29,9 @@ const Login=()=>{
     }
     return(
         <Grid>
+            <div className="App"
+           
+            > 
             <Paper elevation={10} style={paperStyle}>
                 <Grid align='center'>
                      <Avatar style={avatarStyle}><LockOutlinedIcon/></Avatar>
@@ -35,19 +39,23 @@ const Login=()=>{
                 </Grid>
                 <TextField onChange={(event)=>setUserName(event.target.value)} label='Username' placeholder='Enter username' fullWidth required/>
                 <TextField onChange={(event)=>setPassword(event.target.value)} label='Password' placeholder='Enter password' type='password' fullWidth required/>
-               
-                <Button onClick={log} type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
+                
+                <Button href="/home" type='submit' color='secondary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
+
                 <Typography >
                      <Link href="#" >
+                     <br/>
                         Forgot password ?
                 </Link>
+                
                 </Typography>
+                <br/>
                 <Typography > Do you have an account ?
                      <Link href="/sign-up" >
                         Sign Up 
                 </Link>
                 </Typography>
-                {Reglist.map((val,key)=>{ 
+                {/*{Reglist.map((val,key)=>{ 
         if(Username===val.Username)
         {
             if(Password===val.Password)
@@ -62,8 +70,9 @@ const Login=()=>{
         }
         }
         )
-    }
+    }*/}
             </Paper>
+            </div>
         </Grid>
     )
 }
