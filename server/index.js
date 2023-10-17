@@ -5,7 +5,7 @@ const app=express();
 app.use(express.static('build'))
 
 app.use(express.json());
-mongoose.connect("mongodb+srv://admin123:admin123@cluster.vrp7c01.mongodb.net/database?retryWrites=true&w=majority", 
+mongoose.connect("mongoDB_URL", 
 {useNewUrlParser: true, },()=>console.log("Connected to DB")); 
 app.post("/newreg",async(req,res)=>{
     const Firstname=req.body.Firstname;
